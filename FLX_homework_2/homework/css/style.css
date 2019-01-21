@@ -1,0 +1,179 @@
+@media print {
+
+    .container {
+        max-width: 550px;
+    }
+
+    .tm-content-box.flex-2-col .flex-item:last-child {
+        max-width: 200px;
+    }
+
+    .tm-content-box.flex-2-col .flex-item img {
+        max-width: 100%;
+    }
+
+    .flex-2-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tm-banner-text::first-letter,
+    .tm-section-description::first-letter,
+    .tm-footer p::first-letter {
+        color: lightskyblue;
+        font-size: 1.5em;
+    }
+
+    .tm-section-description::first-letter,
+    .tm-footer p::first-letter {
+        font-size: 2em;
+    }
+
+    .tm-team-description-container .tm-section-title {
+        color: blue;
+    }
+
+    .tm-section-title+.tm-section-description {
+        font-style: italic;
+    }
+
+    .tm-section-description {
+        line-height: 1.8rem;
+        text-indent: 2rem;
+    }
+
+    .tm-sidebar,
+    #about,
+    .blocks,
+    #ideas,
+    #contact,
+    .heading,
+    .img-contact-us {
+        display: none
+    }
+
+    div.tm-banner {
+        border: none;
+    }
+
+}
+
+@media not print {
+
+    section::before {
+        content: "";
+        position: absolute;
+        border-right: 270px solid transparent;
+        border-top: 45px solid lightskyblue;
+    }
+
+}
+
+.flex-2-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tm-box-bg-title:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.tm-banner-text::first-letter,
+.tm-section-description::first-letter,
+.tm-footer::first-letter {
+    color: lightskyblue;
+    font-size: 30px;
+}
+
+.tm-sidebar,
+.tm-content-header,
+#home+section>.tm-content-box,
+.blocks,
+.heading,
+#tmCarousel,
+section.tm-content-box {
+    box-shadow: 0px 0px 15px 1px grey;
+}
+
+.tm-banner {
+    border: 30px solid #F5F5F5;
+    padding: 0px;
+}
+
+section {
+    position: relative;
+}
+
+.carousel-item h2 {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+h2+p {
+    font-style: italic;
+}
+
+.tm-section-description {
+    line-height: 1.8rem;
+    text-indent: 2rem;
+}
+
+.heading ol a {
+    color: black;
+}
+
+.heading li a:visited {
+    text-decoration: underline;
+}
+
+.heading ol a:hover {
+    color: lightskyblue;
+    text-decoration-style: double;
+}
+
+.heading .text::after {
+    content: "New";
+    color: red;
+    font-size: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.blocks .tm-content-box li {
+    padding: 10px;
+}
+
+.blocks .tm-content-box li:nth-child(2n) {
+    background-color: #F5F5F5
+}
+
+.blocks .tm-content-box li p::first-letter {
+    font-size: 2em;
+}
+
+.submit-btn {
+    background-color: white;
+    color: lightskyblue;
+    border: 1px solid lightskyblue;
+    display: flex;
+    margin-left: auto;
+    padding: 10px 50px;
+    border-radius: 0px;
+}
+
+.submit-btn:hover {
+    background-color: lightskyblue;
+    border-color: transparent;
+}
+
+.mandatory-field::after {
+    content: "*";
+    color: red;
+}
+
+.tm-main-nav li:hover {
+    background-color: #F5F5F5;
+}
