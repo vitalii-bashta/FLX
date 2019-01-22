@@ -125,7 +125,7 @@ h2+p {
     color: black;
 }
 
-.heading li a:visited {
+.heading ol li:visited {
     text-decoration: underline;
 }
 
