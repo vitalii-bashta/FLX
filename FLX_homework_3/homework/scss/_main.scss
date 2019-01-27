@@ -1,0 +1,233 @@
+@mixin capital {
+    color: $headerTextColor;
+    text-transform: uppercase;
+}
+
+@mixin btn {
+    background-color: $btnBackGroundColor;
+
+    &:hover {
+        background-color: lighten($btnBackGroundColor, 5%);
+    }
+
+    text-transform: uppercase;
+    border: none;
+    color: white;
+}
+
+@mixin headerstyle {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+@mixin maintext {
+    line-height: 170%;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: $fontType;
+    background-color: $pageBackGroundColor;
+    color: $mainTextColor;
+}
+
+header {
+    background: $headerBackground no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include capital;
+
+        h1 {
+            margin: 30px;
+        }
+
+        a {
+            position: relative;
+            left: 34%;
+            text-decoration: none;
+            padding: 15px 65px 15px 65px;
+            @include btn;
+        }
+    }
+}
+
+.top-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        img {
+            max-height: 150px;
+        }
+    }
+}
+
+nav {
+    padding: 15px;
+
+    a {
+        padding: 20px 150px;
+        text-decoration: none;
+        font-weight: 700;
+        border-left: 2px solid $borderColor;
+        @include capital;
+    }
+
+    a:nth-child(1) {
+        border: none;
+    }
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+
+    h1 {
+        margin-top: 20px;
+    }
+
+    .toolbar {
+        text-align: right;
+        margin-top: 20px;
+        background-color: inherit;
+
+        input {
+            border: 1px solid $borderColor;
+            padding: 10px 10px 10px 20px;
+            background-color: inherit;
+        }
+    }
+}
+
+h1,
+h4 {
+    @include headerstyle;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+
+    article {
+        display: flex;
+        background-color: $articleBackGroundColor;
+        margin-bottom: 20px;
+        padding: 10px;
+
+        div {
+            padding: 5px;
+        }
+
+        .post-description {
+            color: darken($postDescriptionColor, 5%);
+            font-size: 0.8em;
+            border-bottom: 1px solid $borderColor;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: $articleHeadingColor;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+
+        p {
+            @include maintext;
+        }
+
+        .btn {
+            @include btn;
+            padding: 10px 70px 10px 70px;
+            float: right;
+            margin-top: 15px;
+        }
+
+        img {
+            max-height: 270px;
+        }
+    }
+}
+
+.about {
+    margin-top: 40px;
+    max-width: 940px;
+    position: relative;
+    left: 10px;
+
+    p {
+        margin-bottom: 25px;
+        @include maintext;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.contact-form {
+    margin-top: 50px;
+    text-align: right;
+
+    h4 {
+        font-size: 0.95em;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+            border: 1px solid $borderColor;
+            padding: 20px;
+            margin-top: 5px;
+            background-color: inherit;
+        }
+
+        label {
+            color: $labelColor;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            input {
+                margin-top: 5px;
+                margin-bottom: 30px;
+                width: 450px;
+                height: 20px;
+                border: 1px solid $borderColor;
+                padding: 10px;
+                background-color: inherit;
+            }
+        }
+
+        button {
+            max-width: 200px;
+            padding: 10px 70px 10px 70px;
+            margin-top: 15px;
+            align-self: flex-end;
+            @include btn;
+        }
+    }
+}
+
+footer {
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-size: 0.8em;
+}
