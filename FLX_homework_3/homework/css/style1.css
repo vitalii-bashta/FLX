@@ -5,7 +5,9 @@
 body {
   font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
   background-color: white;
-  color: black; }
+  color: black;
+  font-size: 15px;
+  line-height: 24px; }
 
 header {
   background: url(../img/header_background_v1.jpg) no-repeat;
@@ -89,10 +91,6 @@ h4 {
       color: #01ACAC;
       text-transform: uppercase;
       margin-top: 5px; }
-    .post-list article p {
-      line-height: 170%;
-      font-size: 15px;
-      font-weight: 300; }
     .post-list article .btn {
       background-color: #01ACAC;
       text-transform: uppercase;
@@ -112,10 +110,7 @@ h4 {
   position: relative;
   left: 10px; }
   .about p {
-    margin-bottom: 25px;
-    line-height: 170%;
-    font-size: 15px;
-    font-weight: 300; }
+    margin-bottom: 25px; }
   .about img {
     max-width: 100%; }
 
