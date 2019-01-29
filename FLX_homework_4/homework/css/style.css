@@ -1,0 +1,302 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+body {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-image {
+    background: url("../img/sample2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 0px 40px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45%;
+    color: #FFFFFF;
+}
+
+.heading-buttons {
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.nav-wrapper a {
+    color: #F3F3F3;
+    font-weight: 100;
+}
+
+.heading p:first-child {
+    text-transform: uppercase;
+    font-size: 3.2em;
+    letter-spacing: 5px;
+}
+
+.heading p:first-child span {
+    font-size: 2em;
+}
+
+.heading p:last-child {
+    color: #F3F3F3;
+}
+
+.nav-wrapper div a:nth-child(2) {
+    margin-left: 40px;
+}
+
+.logo {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.heading-buttons a {
+    border: 2px solid white;
+    display: inline-block;
+    padding: 12px 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.heading-buttons a:hover,
+.heading-buttons a:visited,
+.heading-buttons a:active .second-image a:hover,
+.second-image a:visited,
+.second-image a:active {
+    color: white;
+}
+
+.heading-buttons a:hover,
+.second-image a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.triangle {
+    background: linear-gradient(to top right, #F0F0F0 50%, #000000 50%);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -1px;
+}
+
+.triangle p:first-child {
+    color: #FFFFFF;
+    max-width: 43%;
+    align-self: flex-end;
+    margin-right: 50px;
+}
+
+.triangle p:last-child {
+    position: relative;
+    left: 40px;
+    top: 50px;
+    max-width: 350px;
+    font-size: 1.2em;
+}
+
+main section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.second-image {
+    background: url("../img/sample.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    width: 50%;
+    position: relative;
+    color: white;
+}
+
+.second-image a {
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 2px solid #FFFFFF;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.second-image div {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #F3F3F3;
+}
+
+.block-two {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 60px 40px;
+}
+
+.image-description {
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main section {
+    background-color: #F0F0F0;
+    position: relative;
+    top: -1px;
+}
+
+.buttons-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 80px 60px 80px;
+}
+
+.button-block {
+    padding: 15px;
+    max-width: 17%;
+    box-shadow: 0px 2px 5px 0px #9E9E9E;
+}
+
+.button-block button {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    background-color: #097774;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 0px;
+    margin-top: 20px;
+}
+
+.button-block button:hover,
+.subscribe-section form button:hover,
+aside form button:hover {
+    cursor: pointer;
+    background-color: #14a5a0;
+}
+
+.subscribe-section {
+    background-color: #F0F0F0;
+    padding: 30px 20px 80px 20px;
+}
+
+.subscribe-section form {
+    float: right;
+}
+
+.subscribe-section form label {
+    font-size: 1.5em;
+    padding-right: 10px;
+}
+
+.subscribe-section form input,
+aside form input {
+    border: 1px solid #000000;
+    padding: 8px;
+    max-width: 130px;
+    background-color: #f0f0f0;
+}
+
+.subscribe-section form button,
+aside form button {
+    background-color: #097774;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    padding: 9px;
+    margin-left: 5px;
+}
+
+footer {
+    padding: 100px 40px 0px 40px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+aside {
+    margin-left: auto;
+    max-width: 25%;
+}
+
+.footer-info div {
+    max-width: 25%;
+    margin-right: 25px;
+}
+
+.footer-info p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.footer-info p,
+.footer-nav p {
+    color: #9E9E9E;
+}
+
+.tweet p:last-child {
+    color: #E8E8E8;
+    margin-top: 5px;
+}
+
+hr {
+    height: 2px;
+    background-color: #F0F0F0;
+    border: none;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.footer-nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer-nav a:hover,
+.footer-nav a:visited,
+.footer-nav a:active {
+    color: #000000;
+}
