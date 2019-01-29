@@ -153,6 +153,11 @@ main section h3 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.second-image a:hover span {
+    color: red;
+    font-size: 1.2em;
+}
+
 .second-image div {
     position: absolute;
     bottom: 20px;
