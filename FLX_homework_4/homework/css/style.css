@@ -85,9 +85,12 @@ a {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.heading-buttons a,
 .heading-buttons a:hover,
 .heading-buttons a:visited,
-.heading-buttons a:active .second-image a:hover,
+.heading-buttons a:active,
+.second-image a,
+.second-image a:hover,
 .second-image a:visited,
 .second-image a:active {
     color: white;
@@ -295,6 +298,7 @@ hr {
     padding: 0 10px;
 }
 
+.footer-nav a,
 .footer-nav a:hover,
 .footer-nav a:visited,
 .footer-nav a:active {
