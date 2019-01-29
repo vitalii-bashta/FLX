@@ -219,6 +219,7 @@ aside form button:hover {
 
 .subscribe-section form {
     float: right;
+    padding-top: 10px;
 }
 
 .subscribe-section form label {
@@ -232,6 +233,11 @@ aside form input {
     padding: 8px;
     max-width: 130px;
     background-color: #f0f0f0;
+}
+
+.subscribe-section form input::placeholder,
+aside form input::placeholder {
+    color: #000000;
 }
 
 .subscribe-section form button,
@@ -303,4 +309,9 @@ hr {
 .footer-nav a:visited,
 .footer-nav a:active {
     color: #000000;
+}
+
+.register a:hover,
+.footer-nav a:hover {
+    color: #097774;
 }
