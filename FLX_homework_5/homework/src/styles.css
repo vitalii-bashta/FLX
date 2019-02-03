@@ -213,6 +213,128 @@ footer {
   font-size: 0.8vw;
 }
 
+@media only screen and (max-width: 768px) {
+
+  header,
+  main,
+  footer {
+    max-width: 97%;
+    margin: auto;
+  }
+
+  body {
+    line-height: 3.5vw;
+  }
+
+  .page-posts-wrapper {
+    max-width: 61%
+  }
+
+  .news-wrapper {
+    max-width: 36%;
+  }
+
+  .post-block {
+    display: block;
+  }
+
+  .post-block article {
+    display: block;
+  }
+
+  .post-block img {
+    width: 100%;
+  }
+
+  main {
+    margin-top: 2vw;
+  }
+
+  .block-content {
+    padding: 4vw;
+  }
+
+  .block-content h2 {
+    font-size: 6.2vw;
+    line-height: 7vw;
+    margin-bottom: 20px;
+  }
+
+  .block-content p {
+    font-size: 2vw;
+  }
+
+  .date {
+    font-size: 7vw;
+    line-height: 7vw;
+    margin: 10px auto;
+  }
+
+  .date span {
+    font-size: 3.5vw;
+    display: block;
+  }
+
+  .post-block:nth-child(even) .block-content {
+    text-align: left;
+  }
+
+  .news-block h3 {
+    font-size: 3vw;
+    line-height: 3.5vw;
+
+  }
+
+  .news-block p {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  .news-block article {
+    margin-top: -1vw;
+    padding: 3vw;
+
+  }
+
+  .news-block-two {
+    margin-top: 2vw;
+  }
+
+  .header-nav {
+    min-height: 25vw;
+    flex-direction: column;
+  }
+
+  .burger-menu {
+    display: block;
+    margin: 3vw auto;
+    color: white;
+    font-weight: 100;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .nav-logo {
+    margin-bottom: 6vw;
+  }
+
+  .nav-logo a {
+    font-size: 5vw;
+  }
+
+  footer {
+    display: block;
+    font-size: 2vw;
+    line-height: 3vw;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    padding: 3vw;
+  }
+}
+
 @media only screen and (max-width: 480px) {
 
   header,
@@ -228,6 +350,7 @@ footer {
 
   main {
     flex-direction: column;
+    margin-top: 4vw;
   }
 
   .page-posts-wrapper,
@@ -258,7 +381,8 @@ footer {
   }
 
   .block-content p {
-    font-size: 4vw;
+    font-size: 3.5vw;
+    line-height: 5vw;
   }
 
   .date {
@@ -277,21 +401,27 @@ footer {
   }
 
   .news-block h3 {
-    font-size: 3vw;
+    font-size: 5vw;
     margin: 3vw 0;
   }
 
   .news-block p {
-    font-size: 2vw;
-    line-height: 3vw;
+    font-size: 3.5vw;
+    line-height: 5vw;
   }
 
   .news-block article {
     margin-top: -2vw;
+    padding: 7vw;
+  }
+
+  .news-block-two {
+    margin-top: 4vw;
+    margin-bottom: 8vw;
   }
 
   .header-nav {
-    height: auto;
+    min-height: 40vw;
     flex-direction: column;
   }
 
@@ -306,18 +436,20 @@ footer {
   }
 
   .nav-logo {
-    margin: 3vw auto;
+    margin-bottom: 12vw;
   }
 
   .nav-logo a {
-    font-size: 5vw;
+    font-size: 8vw;
   }
 
   footer {
     display: block;
-    font-size: 2vw;
-    line-height: 4vw;
+    font-size: 3vw;
+    line-height: 5vw;
     text-align: center;
+    margin-bottom: 1vw;
+    padding: 5vw 0;
   }
 
   .footer-credits {
