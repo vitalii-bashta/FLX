@@ -1,0 +1,71 @@
+.heading {
+    text-align: center;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#input {
+    width: 100%;
+    margin: 10px;
+    padding: 0 5px;
+}
+
+.main-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+    min-height: 500px;
+}
+
+.single-item {
+    display: flex;
+    align-items: center;
+
+}
+
+.todo-wrapper {
+    margin: 10px;
+}
+
+.todo-item {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.trash {
+    margin-left: auto;
+}
+
+.cat-pow {
+    width: 60px;
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    margin: 20px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#add-box,
+.trash,
+.cb-unchecked,
+.cb-checked {
+    cursor: pointer;
+}
+
+.warning {
+    margin: 0 15px;
+    color: red;
+    text-align: center;
+}
+
+.image-wrapper {
+    margin-top: 100px;
+}
