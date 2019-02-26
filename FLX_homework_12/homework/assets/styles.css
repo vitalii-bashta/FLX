@@ -1,0 +1,57 @@
+.main-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+    min-height: 500px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.trash-icon {
+    float: right;
+}
+
+div[class^='todo-item'] {
+    padding: 15px 0;
+}
+
+.trash-icon {
+    cursor: pointer;
+}
+
+.button {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 2px;
+    background-color: grey;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: lightgrey;
+    transition-duration: 1s;
+}
+
+.add-item-wrapper,
+.modify-task-wrapper {
+    display: flex;
+}
+
+#main-page .button {
+    max-width: 20%;
+}
+
+.hidden {
+    display: none;
+}
